@@ -1,0 +1,105 @@
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> costatur </title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styleResponsive.css">
+    </head>
+    
+    <body>
+        <!-- <body onload="alteraMenuFixo()"> -->
+        <nav id="menuPrincipal">
+            <div class="cxLogo">
+                <div class="logo"><a href="#"><img src="assets/img/logo.png" width="160px"></a></div>
+
+            </div>
+    
+            <div id="buscaTopo">
+                <button class="linkBusca" onclick="abrePesquisa()"> Adicionarl Local</button>
+                <button class="linkBusca" onclick="abrePesquisa()">Insira as datas </button>
+                <button class="linkBusca" onclick="abrePesquisa()"> Insira número de hóspedes</button>
+                <a href="#"><img src="assets/img/lupaicon.png" class="lupaIcon"></a>
+            </div>
+    
+            <div id="pais">
+                <div class="regiao"><a href="#"><i class="fas fa-globe"></i>&nbsp; Português BR</a></div>
+                <div class="regiao"><a href="#">R$ BRL </a></div>
+            </div>
+    
+            <ul>
+                <li><a href="#" onclick="menuRegiao()"><i class="fas fa-globe"></i>&nbsp;<img src="assets/img/arrowDownicon.png" width="10px"></a></li>
+                <li><a href="#" id="link_acomodacao" class="ocutar" >Hospede em sua acomodação</a></li>
+                <li><a href="#" id="link_experiencia" >Hospede uma experiência</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#" class="menuProvisorio">Entrar</a></li>
+                <a href="#" class="destaqueCadastro">Cadastre-se</a>
+            </ul>
+        </nav>
+        <div id='pesquisa' class="painelPesquisa">
+            <a href="#" class="linkPesquisa">Lugares para ficar</a><a href="#"></a>
+            <a href="#" class="linkPesquisa">Estadias longas </a>
+            <a href="#" class="linkPesquisa">Experiências</a>
+            <a href="#" class="linkPesquisa">Experiências Online</a>
+            <a href="#" onclick="fechaPesquisa()"  class="linkPesquisa" ><i id='fechar' class="fas fa-window-close"></i></a><br>
+            
+    
+            <div class="cxPesquisa">
+                <div class="boxPesquisaLocalizacao">
+                    <b>LOCALIZAÇÃO</b><br>
+                    <input type="text" class="cxBranca" placeholder="Para onde você vai?">
+                </div>
+                <div class="boxPesquisaLocalizacao">
+                    <form action="busca.html" method="POST" id='frm-bsc' onsubmit="calcular()">
+                    <b>CHECKIN/CHECKOUT</b><br>
+                    <input type="date" class="cxBranca"  id="checkin" placeholder="Insira as datas">
+                    <input type="date"  class="cxBranca"  id="checkout" placeholder="Insira as datas">
+                </div>
+                <div class="boxPesquisaLocalizacao">
+                    <b>HÓSPEDES</b><br>
+                    <input type="text" class="cxBranca" placeholder="Insira os números de hóspedes">
+                </div>
+                <input type="image" src="assets/img/btnBuscar.png" class="btnBuscar" />
+            </form>
+            </div>
+        </div>
+        </div>
+    
+        <div class="conteudo-busca">
+            <div class="conteudo-busca-quantidade">Mais de 300 acomodações
+                <div class="conteudo-busca-titulo">Mais de 300 acomodações
+                    <button class="btn-opcionais">Flexbilidade de cancelamento</button>
+                    <button class="btn-opcionais">Tipo de lugar</button>
+                    <button class="btn-opcionais">Preço</button>
+                    <button class="btn-opcionais">Reserva instatânea</button>
+                    <button class="btn-opcionais">Mais filtro</button>
+                </div>
+    
+                <div id='resultados-quartos'>
+                </div>
+                                                           
+                <div class="rodape-busca"><br>
+                        <div class="regiao-rodape">© 2020 Virgílio P. Costa Desafio Gama Academy</br>
+                        <ul class="rede-social">
+                        <li><a href="https://www.facebook.com/virgiliopc"><i class="fa fa-facebook" target="_blank" class="facebook"></i></a></li>
+                        <li><a href="https://twitter.com/virgiliopc"><i class="fa fa-twitter" target="_blank" class="twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/virgilio-pires-da-costa/"><i class="fa fa-linkedin" target="_blank" class="linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/virgiliopiresda/?hl=pt-br"><i class="fa fa-instagram" target="_blank" class="instagram"></i></a></li>
+                        <li><a href="https://github.com/Virgiliopc"><i class="fa fa-github" target="_blank" class="github"></i></a></li>
+                        </ul>                    
+                       </div>
+                </div>
+            </div>  
+    
+        </div>
+    
+    
+        <script src="https://kit.fontawesome.com/d22cd639ed.js" crossorigin="anonymous"></script>
+        <script src="assets/js/vanilla.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+    
+    </html>
